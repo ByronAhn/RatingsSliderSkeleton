@@ -1,5 +1,7 @@
 # RatingsSliderSkeleton
-A skeleton of PCIbex code for an acceptability ratings task, with vertical sliders that have been specially formatted in CSS.
+A skeleton of PCIbex code that would be useful for a linguistics acceptability ratings task, with vertical sliders that have been specially formatted in CSS.
+
+The CSS has been amended to be mobile responsive, so that sliders and font sizes render appropriately.
 
 # Notes
 To use this for an experiment, you should…
