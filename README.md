@@ -3,6 +3,8 @@ A skeleton of PCIbex code that would be useful for a linguistics acceptability r
 
 The CSS has been amended to be mobile responsive, so that sliders and font sizes render appropriately.
 
+**This code running on PCIbex**: (https://farm.pcibex.net/p/YQhsuE/)
+
 # Notes
 To use this for an experiment, you should…
 
