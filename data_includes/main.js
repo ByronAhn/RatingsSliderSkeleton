@@ -91,7 +91,7 @@ newTrial("consent",
 		.print()
 	,
 	newHtml("consent_form", "consent.html")
-		.cssContainer({"width":"100%", "font-size":"12pt"})
+		.cssContainer({"width":"100%"})
 		.checkboxWarning("You must consent before continuing.")
 		.print()
 	,
