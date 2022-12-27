@@ -49,9 +49,9 @@ Header().log("UNIQUE_ID", uniqueCode);
 
 // set the Sequence, depending on whether the participant has come from Prolific (i.e. with PROLIFIC_PID defined as a URL paramter)
 if (GetURLParameter("PROLIFIC_PID") == null){	
-	Sequence("instructions", "consent", "demo1", "demo2", randomize("experimental-trial"), "send", "completion_screen")
+	Sequence("instructions", "consent", "demo1", "demo2", randomize("experimental-trial"), "freeform", "send", "completion_screen")
 } else {
-	Sequence("instructions", "consent", "demo1", "demo2", randomize("experimental-trial"), "send", "completion_screen_Prolific")
+	Sequence("instructions", "consent", "demo1", "demo2", randomize("experimental-trial"), "freeform", "send", "completion_screen_Prolific")
 }
 
 
@@ -270,6 +270,28 @@ Template("targetItems.csv", function_for_template)
 Template("controlItems.csv", function_for_template)
 // NOTE that having multiple of these Template functions in a row, plus randomize("experimental-trial") in the Sequence, will *INTERMINGLE* the rows from targetItems.csv and rows from controlItems.csv
 
+
+newTrial("freeform",
+	newText("almostdone", "<h3>Great work! You've finished the task.</h3>")
+	,
+	newText("freeResponsePrompt", "<p><b><i>Optional:</i></b> Do you have any additional information you'd like to share, or any comments on this task? Feel free to share your thoughts on <u>anything</u>. (<i>Leave blank if you have no comments!</i>)</p>")
+		.print()
+	,
+	newTextInput("freeResponse", "")
+		.settings.cssContainer({
+			"margin-left": "1em"
+			})
+		.lines(0)
+		.size("80vw", "12em")
+		.print()
+	,
+	newButton("ContinueButton", "Complete the Task")
+		.center()
+		.print()
+		.wait()
+	,
+	getTextInput("freeResponse").log()
+)
 
 
 // =============
