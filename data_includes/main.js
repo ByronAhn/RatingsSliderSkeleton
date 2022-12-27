@@ -29,7 +29,7 @@ var showPopup1 = function() {document.getElementById("popup1").style.display ='b
 var hidePopup1 = function() {document.getElementById("popup1").style.display ='none';}
 
 // html for the popup that shows the unique code
-var popupHTML = "<div style='display: none; position: fixed; padding: 10px; width: 280px; left: 50%; margin-left: -150px; height: 180px; top: 50%; margin-top: -100px; background: #FFF; z-index: 20; -webkit-box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5); box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5);' id='popup1'><p>Please click <a href='««ADD LINK»»' target='_blank'>««HERE»»</a>. When asked for a unique ID code, please input <span style='font-size: larger; font-weight: bold;'>"+uniqueCode+"</span>.</p><p><a href='#' onclick='hidePopup1()'>(close this pop-up)</a></p>"
+var popupHTML = "<div style='display: none; position: fixed; padding: 0vmin; width: 84vmin; left: 50%; margin-left: -42vmin; height: 56vmin; top: 50%; margin-top: -28vmin; background: #FFF; z-index: 20; -webkit-box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5); box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5);' id='popup1'><div style='text-align: center; width:80vmin; padding: 2vmin; position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%);'><p>Please click <a href='««ADD LINK»»' target='_blank'>««HERE»»</a>. When asked for a unique ID code, please input <span style='font-size: larger; font-weight: bold;'>"+uniqueCode+"</span>.</p><p><a href='#' onclick='hidePopup1()'>(close this pop-up)</a></p></div></div>"
 
 
 
